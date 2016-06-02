@@ -2,6 +2,9 @@
   "name": "bootstrap-sass",
   "version": "3.3.6",
   "description": "bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.",
+  "scripts": {
+    "start": "node server.js"
+  },
   "main": "assets/javascripts/bootstrap.js",
   "repository": {
     "type": "git",
