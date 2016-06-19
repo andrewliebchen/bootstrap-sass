@@ -3,7 +3,8 @@
   "version": "3.3.6",
   "description": "bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "storybook": "start-storybook -p 9001"
   },
   "main": "assets/javascripts/bootstrap.js",
   "repository": {
@@ -13,8 +14,7 @@
   "keywords": [
     "bootstrap",
     "sass",
-    "css",
-    "eyeglass-module"
+    "css"
   ],
   "contributors": [
     "Thomas McDonald",
@@ -27,21 +27,33 @@
     "url": "https://github.com/twbs/bootstrap-sass/issues"
   },
   "devDependencies": {
+    "@kadira/storybook": "^1.32.1",
     "autoprefixer-core": "^6.0.1",
+    "classnames": "^2.2.5",
     "css-loader": "^0.23.1",
+    "dom-helpers": "^2.4.0",
+    "eslint-plugin-react": "^5.2.2",
     "file-loader": "^0.8.5",
+    "invariant": "^2.2.1",
+    "keycode": "^2.1.2",
+    "lodash-compat": "^3.10.2",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0",
     "raw-loader": "^0.5.1",
+    "react-dom": "^15.1.0",
+    "react-overlays": "^0.6.3",
+    "react-prop-types": "^0.3.2",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
+    "uncontrollable": "^3.2.4",
     "url-loader": "^0.5.7",
+    "warning": "^3.0.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
-  "eyeglass": {
-    "exports": "eyeglass-exports.js",
-    "needs": "^0.7.1"
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   }
 }

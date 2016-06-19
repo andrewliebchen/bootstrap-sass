@@ -7,6 +7,8 @@ import {
   bsStyles, bsSizes, bsClass, getClassSet, prefix,
 } from './utils/bootstrapUtils';
 
+import styles from '../stylesheets/Button.scss'
+
 import SafeAnchor from './SafeAnchor';
 
 const ButtonStyles = State.values().concat(DEFAULT, PRIMARY, LINK);
@@ -64,7 +66,7 @@ class Button extends React.Component {
       <Component
         {...this.props}
         type={this.props.type || 'button'}
-        className={classNames(this.props.className, classes)}>
+        className={classNames(this.props.className, classes, styles.btn)}>
         {this.props.children}
       </Component>
     );
